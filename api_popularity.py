@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restx import Api, Resource, fields
 
-from deployment.predict_popularity import predecir_popularidad
+from predict_popularity import predecir_popularidad
 
 
 
@@ -55,4 +55,4 @@ class PopularityApi(Resource):
     
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=False, host='0.0.0.0', port=5000)
+    app.run(debug=True, use_reloader=False, host='0.0.0.0', port=5002)
